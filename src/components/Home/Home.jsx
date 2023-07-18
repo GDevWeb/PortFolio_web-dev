@@ -3,7 +3,7 @@ import ClickToAction from '../CTA/ClickToAction';
 import Introduction from './Introduction';
 import Presentation from './presentation';
 import Hobbies from './Hobbies';
-import CV from '../../../public/documents/cv_Dammaretz-Gaetan_Dev-Web.pdf';
+import CV from '../../documents/cv_Dammaretz-Gaetan_Dev-Web.pdf';
 import arrowLeftIcon from '../../assets/icons/arrow-left.svg';
 import arrowRightIcon from '../../assets/icons/arrow-right.svg';
 

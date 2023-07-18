@@ -4,7 +4,7 @@ import HardSkills from "./HardSkills";
 import Others from "./HardSkills_BackEnd";
 import ClickToAction from "../CTA/ClickToAction";
 import HardSkills_BackEnd from "./HardSkills_BackEnd";
-import CV from '../../../public/documents/cv_Dammaretz-Gaetan_Dev-Web.pdf';
+import CV from '../../documents/cv_Dammaretz-Gaetan_Dev-Web.pdf';
 import arrowLeftIcon from '../../assets/icons/arrow-left.svg';
 import arrowRightIcon from '../../assets/icons/arrow-right.svg';
 
