@@ -15,8 +15,8 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        // min-height: 100vh;
-        margin-bottom: 25vh;
+        // // min-height: 100vh;
+        // margin-bottom: 25vh;
     }
 
     #aboutMe {
@@ -28,7 +28,6 @@ main {
     }
 
     #skills {
-        // justify-content: center;
         align-items: center;
         flex-basis: 100%;
         min-height: 60vh;
