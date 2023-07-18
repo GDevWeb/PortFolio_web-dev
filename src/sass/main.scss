@@ -1,0 +1,340 @@
+@import "./variables.scss";
+
+header {
+    @include FlexColCenterCenter;
+    width: 100%;
+    height: 100vh;
+    flex-basis: 100%;
+    background-color: $secondaryColor;
+    @include Border;
+    border-bottom: 0.1rem solid $tiersColor;
+
+
+    .logo {
+        @include FlexRowCenter;
+        flex-direction: row;
+
+        figure {
+            @include FlexColCenterCenter;
+            flex-basis: 100%;
+
+            video {
+                max-width: 100%;
+                @include ResponsivImg;
+            }
+        }
+    }
+
+}
+
+main {
+    @include FlexCol;
+    justify-content: space-around;
+    min-height: 100vh;
+    width: 90%;
+    margin: 25vh auto;
+    padding: 0.5rem;
+    flex-grow: 1;
+
+    section:not(:last-child) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 25vh;
+    }
+
+
+    #introduction p {
+        flex-basis: 25%;
+    }
+
+    .presentation {
+        @include FlexColCenter;
+        flex-basis: 50%;
+
+        p {
+            margin-top: 0.25rem;
+        }
+
+        p.signature {
+            text-align: right;
+        }
+    }
+
+    #contact {
+        @include SectionStyle;
+        text-align: center;
+
+        .contact-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .contact-link {
+                flex-basis: 20%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            a {
+                font-size: 2rem;
+                color: $tiersColor;
+            }
+
+            .icon {
+                width: 3rem;
+            }
+        }
+
+    }
+}
+
+footer {
+    height: 10vh;
+    @include SectionStyle;
+    @include FlexRowCenter;
+
+    .copyright {
+        flex-basis: 50%;
+    }
+
+    .social-links {
+        @include Flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-basis: 50%;
+
+        a {
+            font-size: 2rem;
+            color: $tiersColor;
+        }
+
+        .icon {
+            width: 3rem;
+        }
+    }
+}
+
+// CTA - link to CV :
+.callToAction {
+    margin-top: 2rem;
+
+    button.callToAction {
+        padding: 0.5rem;
+        background-color: $tiersColor;
+        @include BorderRadius;
+        color: $fontColor;
+    }
+}
+
+.containerBackToTop {
+    @include Flex;
+    justify-content: flex-end;
+    flex-basis: 10%;
+    position: fixed;
+    bottom: 10vh;
+    right: 0.5rem;
+
+    .BackToTopButton {
+        width: 3rem;
+        height: 3rem;
+        padding: 0.5rem;
+        @include BorderRadiusCircle;
+
+        &:hover {
+            background-color: $tiersColor;
+            color: $fontColor;
+        }
+    }
+}
+
+// scroll categories : 
+.container_scroll-button {
+    @include FlexRowCenterCenter();
+    width: 50%;
+    flex-basis: 10%;
+    margin: auto;
+
+    button{
+        border: none;
+        background-color: transparent;
+    }
+    .arrow {
+        width:4rem;
+        border: none;
+        background-color: transparent;
+    }
+
+    .scrollButton {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 0 0.2rem;
+        @include BorderRadiusTheme;
+
+    }
+
+    .straight {
+        width: 2rem;
+        border: 0.1rem solid $fontColor;
+    }
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    gap: 0.5rem;
+}
+
+.card {
+    @include FlexColCenterCenter;
+    flex-shrink: 0;
+    height: 20rem;
+    flex-basis: 48%;
+    padding: 0.625rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border-radius: 0.3125rem;
+    border: 1px solid $tiersColor;
+    background: $cardColor;
+
+    .icon {
+        display: flex;
+        align-items: end;
+        flex-basis: 25%;
+        width: 4rem;
+        color: $tiersColor;
+    }
+
+    .skillName {
+        flex-basis: 20%;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .skill-description {
+        flex-basis: 60%;
+    }
+
+}
+
+.title_section {
+    flex-basis: 20%;
+    margin-bottom: 1rem;
+
+    p {
+        font-size: 3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $tiersColor;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 0.3rem;
+        background-image: linear-gradient(to right, $tiersColor 25%, transparent 50%);
+    }
+
+}
+
+.short {
+
+    &::after {
+        content: "";
+        display: block;
+        width: 25%;
+        height: 0.3rem;
+        background-image: linear-gradient(to right, $tiersColor 25%, transparent 50%);
+
+    }
+}
+
+// manage flex of differents section : 
+#skills,
+#portFolio {
+    @include Flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+// section portfolio : 
+.card.portfolioCard {
+    align-items: center;
+    flex-basis: 48%;
+    height: auto;
+
+    .projectName {
+        flex-basis: 10%;
+        width: 100%;
+        text-align: center
+    }
+
+    figure.image {
+        @include FlexRowCenter;
+        flex-basis: 60%;
+
+        img {
+            width: 50%;
+            height: auto;
+        }
+    }
+
+    .description {
+        flex-basis: 20%;
+
+    }
+
+    .social-Dev-Links {
+        @include Flex;
+        justify-content: space-around;
+        flex-basis: 100%;
+        width: 100%;
+
+        .githubLink,
+        .codeSandBoxLink {
+            @include FlexRowCenter;
+            flex-basis: 50%;
+
+            a {
+                font-size: 2.5rem;
+                color: $tiersColor;
+            }
+        }
+
+    }
+
+    .type {
+        flex-basis: 10%;
+        font-style: italic;
+    }
+
+}
+
+// pseudo class : 
+.active {
+    background-color: $tiersColor;
+}
+
+// scroll section : 
+button.active {
+    background-color: $tiersColor;
+    color: white;
+}
+
+// responsive : 
+@media screen and (min-width: 1024px) {
+
+
+
+    body {
+        font-size: 2rem;
+    }
+
+}

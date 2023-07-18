@@ -1,0 +1,45 @@
+@import "./font.scss";
+@import "./variables.scss";
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    @include FlexCol;
+    min-height: 100vh;
+    background-color: $primaryColor;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    color: $fontColor;
+}
+
+.wrapper {
+    max-width: $maxWidth;
+    min-height: 100vh;
+    margin: auto;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $fontColor;
+    cursor: pointer;
+
+    &:hover {
+        color: $tiersColor;
+    }
+}

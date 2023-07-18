@@ -1,0 +1,86 @@
+// colors : 
+$primaryColor : #23263A; //background
+$secondaryColor : #212336; //header
+$cardColor : #04122F;
+$tiersColor : #FF4A57; //cta borders,
+$fontColor : #FFFF;
+
+// responsive : 
+$maxWidth : 142rem;
+$desktopWidth: 9.92rem;
+$tabWidth: 76.8rem;
+$mobilWidth: 42.5rem;
+
+$linkSize : 3.6rem;
+$cardSize : 45%;
+
+
+// preset : 
+@mixin Flex() {
+    display: flex;
+}
+
+;
+
+@mixin FlexCol() {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin FlexColCenter() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin FlexColCenterCenter() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin FlexRowCenter() {
+    display: flex;
+    flex-direction: Row;
+    justify-content: center;
+}
+
+@mixin FlexRowCenterCenter() {
+    display: flex;
+    flex-direction: Row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin Border() {
+    border: 0.3 solid transparent;
+}
+
+@mixin BorderRadius() {
+    border: 0.3rem solid transparent;
+    border-radius: 0.5rem;
+}
+
+@mixin BorderRadiusCircle(){
+    border: 0.3rem solid transparent;
+    border-radius: 50%;
+}
+
+@mixin BorderRadiusTheme(){
+    border: 0.2rem solid $tiersColor;
+    border-radius: 50%;
+}
+
+@mixin ResponsivImg {
+    width: 100%;
+    height: auto;
+}
+
+@mixin SectionStyle {
+    border: 0.2rem solid $tiersColor;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    background-color: $cardColor;
+}
