@@ -1,3 +1,4 @@
+import './Card.scss';
 
 export default function Cards({ icon, skillName, description}) {
   return (

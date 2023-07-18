@@ -1,10 +1,10 @@
 
-export default function Introduction() {
+export default function About() {
   return (
     <>
-    <div id="introduction" className="presentations">
+    <div id="about" className="presentations">
       <div className="title_section">
-        <p>Introduction </p>
+        <p>Introduction</p>
       </div>
     <p>Bonjour,</p>
 <p>Je me nomme Dammaretz Gaëtan</p>

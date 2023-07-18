@@ -1,3 +1,6 @@
+import './Card.scss';
+import './CardPortFolio.scss';
+
 import img from '../../../public/img/vignette.png';
 import githubIcon from '../../assets/icons/github.svg';
 import codesandboxIcon from '../../assets/icons/codesandbox.svg';

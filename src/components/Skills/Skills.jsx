@@ -40,7 +40,6 @@ export default function Skills() {
 
   return (
     <>
-      <section>
         <div id="skills">
           {activeComponent === "softSkills" && <SoftSkills />}
           {activeComponent === "hardSkills" && <HardSkills />}
@@ -96,7 +95,6 @@ export default function Skills() {
           <img src={arrowRightIcon} alt="flèche vers la droite" className="arrow" />
           </button>
         </div>
-      </section>
     </>
   );
 }

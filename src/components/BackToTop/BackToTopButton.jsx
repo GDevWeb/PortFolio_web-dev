@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import './BackToTop.scss';
 import { FaChevronUp } from "react-icons/fa";
 
 export default function BackToTopButton() {

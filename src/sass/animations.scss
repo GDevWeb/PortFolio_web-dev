@@ -1,0 +1,23 @@
+
+// pulse : 
+@mixin pulse-animation($duration: 1.5s) {
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  
+    animation: pulse $duration infinite;
+  }
+  
+//   // Utiliser le mixin :
+//   .pulse-element {
+//     @include pulse-animation(1.5s); // La durée de l'animation est de 1,5 seconde et elle se répète indéfiniment
+//   }
+  

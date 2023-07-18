@@ -1,6 +1,6 @@
-import { lazy } from "react";
+import './Header.scss';
+
 import logo from "../../assets/videos/logo.mp4";
-import Navbar from "../NavBar/navBar";
 
 export default function Header() {
 
@@ -8,10 +8,9 @@ export default function Header() {
     <header id="home">
       <div className='logo'>
         <figure>
-          <video src={logo} autoPlay={true} loop muted onLoad={lazy}></video>
+          <video src={logo} autoPlay={true} loop muted></video>
         </figure>
       </div>
-      <Navbar/>
     </header>
   );
 }

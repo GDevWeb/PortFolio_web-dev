@@ -1,0 +1,22 @@
+@import '../../sass/variables.scss';
+
+.containerBackToTop {
+    @include Flex;
+    justify-content: flex-end;
+    flex-basis: 10%;
+    position: fixed;
+    bottom: 10vh;
+    right: 0.5rem;
+
+    .BackToTopButton {
+        width: 3rem;
+        height: 3rem;
+        padding: 0.5rem;
+        @include BorderRadiusCircle;
+
+        &:hover {
+            background-color: $tiersColor;
+            color: $fontColor;
+        }
+    }
+}

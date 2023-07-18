@@ -1,3 +1,4 @@
+import './Contact.scss';
 import mailIcon from "../../assets/icons/envelope.svg";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
 

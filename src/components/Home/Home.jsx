@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import ClickToAction from '../CTA/ClickToAction';
-import Introduction from './Introduction';
-import Presentation from './presentation';
-import Hobbies from './Hobbies';
+import Introduction from '../About/Introduction';
+import Presentation from '../About/Presentation';
+import Hobbies from '../About/Hobbies';
 import CV from '../../documents/cv_Dammaretz-Gaetan_Dev-Web.pdf';
 import arrowLeftIcon from '../../assets/icons/arrow-left.svg';
 import arrowRightIcon from '../../assets/icons/arrow-right.svg';
@@ -38,8 +38,8 @@ export default function Home() {
 
   return (
     <>
-    <section>
-      <div id="aboutMe" className="container home">
+
+      <div id="aboutMe">
         {activeComponent === "introduction" && <Introduction />}
         {activeComponent === "presentation" && <Presentation />}
         {activeComponent === "hobbies" && <Hobbies />}
@@ -78,7 +78,6 @@ export default function Home() {
           <img src={arrowRightIcon} alt="flèche vers la droite" className="arrow" />
         </button>
       </div>
-    </section>
     </>
   );
 }

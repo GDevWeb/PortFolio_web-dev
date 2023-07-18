@@ -1,0 +1,20 @@
+@import '../../sass/variables.scss';
+@import '../../sass/animations.scss';
+
+// CTA - link to CV :
+.callToAction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem ;
+
+    button.callToAction {
+        padding: 0.5rem;
+        background-color: $tiersColor;
+        @include BorderRadius;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: $fontColor;
+        @include pulse-animation;
+    }
+}

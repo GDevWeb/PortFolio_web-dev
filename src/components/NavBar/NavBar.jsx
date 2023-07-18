@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import './Navbar.scss';
-import { FaBars} from "react-icons/fa";
 import barsIcon from '../../assets/icons/bars.svg'
 
 
@@ -10,6 +10,11 @@ export default function Navbar() {
 
   const toggleNav = () => {
     setToggleMenu(!toggleMenu);
+  };
+
+  // Fonction pour refermer la liste
+  const closeMenu = () => {
+    setToggleMenu(false);
   };
 
   useEffect(() => {
@@ -26,18 +31,18 @@ export default function Navbar() {
 
   return (
     <nav>
-      {(toggleMenu || largeur > 768) && (
+      {(toggleMenu || largeur > 425) && (
         <ul className="liste">
-          <li className="items"><a href="#home" aria-label="retour à l'accueil">Accueil</a></li>
-          <li className="items"><a href="#aboutMe" aria-label="aller à la section à propos de moi">About</a></li>
-          <li className="items"><a href="#skills" aria-label="aller à la section mes compétences">Skills</a></li>
-          <li className="items"><a href="#portFolio" aria-label="aller à la section portfolio">PortFolio</a></li>
-          <li className="items"><a href="#contact" aria-label="aller à la section me contacter">Contact</a></li>
+          <li className="items"><Link to="/" onClick={closeMenu} aria-label="retour à l'accueil">Accueil</Link></li>
+          <li className="items"><Link to="/" onClick={closeMenu} aria-label="aller à la section à propos de moi">About</Link></li>
+          <li className="items"><Link to="/skills" onClick={closeMenu} aria-label="aller à la section mes compétences">Skills</Link></li>
+          <li className="items"><Link to="/portFolio" onClick={closeMenu} aria-label="aller à la section portfolio">PortFolio</Link></li>
+          <li className="items"><Link to="/contact" onClick={closeMenu} aria-label="aller à la section me contacter">Contact</Link></li>
         </ul>
       )}
-<button onClick={toggleNav} className="btn">
-  <img src={barsIcon} alt="Menu" className="icon" width={"40px"}/>
-</button>
+      <button onClick={toggleNav} className="btn">
+        <img src={barsIcon} alt="Menu" className="icon" width={"40px"} />
+      </button>
     </nav>
   );
 }

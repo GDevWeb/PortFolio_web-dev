@@ -1,0 +1,54 @@
+@import '../../sass/variables.scss';
+
+// section portfolio : 
+.card.portfolioCard {
+    align-items: center;
+    flex-basis: 48%;
+    height: auto;
+
+    .projectName {
+        flex-basis: 10%;
+        width: 100%;
+        text-align: center
+    }
+
+    figure.image {
+        @include FlexRowCenter;
+        flex-basis: 60%;
+
+        img {
+            width: 50%;
+            height: auto;
+        }
+    }
+
+    .description {
+        flex-basis: 20%;
+
+    }
+
+    .social-Dev-Links {
+        @include Flex;
+        justify-content: space-around;
+        flex-basis: 100%;
+        width: 100%;
+
+        .githubLink,
+        .codeSandBoxLink {
+            @include FlexRowCenter;
+            flex-basis: 50%;
+
+            a {
+                font-size: 2.5rem;
+                color: $tiersColor;
+            }
+        }
+
+    }
+
+    .type {
+        flex-basis: 10%;
+        font-style: italic;
+    }
+
+}

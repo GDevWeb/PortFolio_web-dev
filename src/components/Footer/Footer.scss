@@ -1,0 +1,27 @@
+@import '../../sass/variables.scss';
+
+footer {
+    height: 10vh;
+    @include SectionStyle;
+    @include FlexRowCenter;
+
+    .copyright {
+        flex-basis: 50%;
+    }
+
+    .social-links {
+        @include Flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-basis: 50%;
+
+        a {
+            font-size: 2rem;
+            color: $tiersColor;
+        }
+
+        .icon {
+            width: 3rem;
+        }
+    }
+}

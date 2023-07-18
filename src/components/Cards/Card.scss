@@ -1,0 +1,33 @@
+@import '../../sass/variables.scss';
+
+.card {
+    @include FlexColCenterCenter;
+    flex-shrink: 0;
+    height: 20rem;
+    flex-basis: 48%;
+    padding: 0.625rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border-radius: 0.3125rem;
+    border: 1px solid $tiersColor;
+    background: $cardColor;
+
+    .icon {
+        display: flex;
+        align-items: end;
+        flex-basis: 25%;
+        width: 4rem;
+        color: $tiersColor;
+    }
+
+    .skillName {
+        flex-basis: 20%;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .skill-description {
+        flex-basis: 60%;
+    }
+
+}
