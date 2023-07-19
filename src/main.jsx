@@ -4,7 +4,7 @@ import './sass/reset.scss';
 import './sass/variables.scss';
 import './sass/font.scss';
 import './sass/main.scss';
-import Root from './Root';
+import Root from './Root.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
