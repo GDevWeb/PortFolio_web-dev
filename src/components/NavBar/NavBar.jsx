@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import './NavBar.scss';
 import barsIcon from '../../assets/icons/bars.svg'
 
 
