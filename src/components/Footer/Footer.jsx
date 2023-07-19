@@ -1,4 +1,4 @@
-import './footer.scss';
+import './Footer.scss';
 import mailIcon from '../../assets/icons/envelope.svg';
 import linkedinIcon from '../../assets/icons/linkedin.svg';
 import githubIcon from '../../assets/icons/github.svg';
