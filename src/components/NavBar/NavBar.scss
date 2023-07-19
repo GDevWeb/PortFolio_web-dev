@@ -7,7 +7,7 @@ nav {
   height: 50vh;
   opacity: 1;
   transition: opacity 0.3s;
-  // z-index: 1;
+  z-index: 1;
 }
 
 .liste {
@@ -51,14 +51,42 @@ a{
 }
 
 // responsive : 
-@media screen and (min-width: 425px) and (max-width: 768px) {
+@media screen and (max-width: 424px){
+  nav{
+    height: 40vh;
+  }
   .liste {
     flex-direction: column;
-    height: 20rem;
+    height: 60vh;
+    background-color: pink;
+
+  }
+  
+  .items {
+    height: 5rem;
+    width: 100%;
+    line-height: 3rem;
+    text-align: center;
+  }
+  
+  .btn {
+    display: block;
+  }
+
+
+}  
+@media screen and (min-width: 425px) and (max-width: 1440px) {
+  nav{
+    height: 25vh;
+  }
+  .liste {
+    flex-direction: column;
+    height: 50vh;
+    margin-top: 1rem;
   }
 
   .items {
-    height: 5rem;
+    height: 4rem;
     width: 100%;
     line-height: 3rem;
     text-align: center;
