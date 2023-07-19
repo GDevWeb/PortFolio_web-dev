@@ -8,6 +8,7 @@ export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [largeur, setLargeur] = useState(window.innerWidth);
 
+
   const toggleNav = () => {
     setToggleMenu(!toggleMenu);
   };
@@ -16,6 +17,7 @@ export default function Navbar() {
   const closeMenu = () => {
     setToggleMenu(false);
   };
+
 
   useEffect(() => {
     const changeWidth = () => {
@@ -31,7 +33,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      {(toggleMenu || largeur > 425) && (
+      {(toggleMenu || largeur > 425 && largeur > 768) && (
         <ul className="liste">
           <li className="items"><Link to="/" onClick={closeMenu} aria-label="retour à l'accueil">Accueil</Link></li>
           <li className="items"><Link to="/" onClick={closeMenu} aria-label="aller à la section à propos de moi">About</Link></li>

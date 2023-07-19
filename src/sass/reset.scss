@@ -16,7 +16,7 @@ html {
 
 body {
     @include FlexCol;
-    min-height: 100vh;
+    height: 100vh;
     background-color: $primaryColor;
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
@@ -24,6 +24,8 @@ body {
 }
 
 .wrapper {
+    display: flex;
+    flex-direction: column;
     max-width: $maxWidth;
     min-height: 100vh;
     margin: auto;
