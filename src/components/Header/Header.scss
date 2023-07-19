@@ -7,7 +7,7 @@ header {
     flex-basis: 100%;
     background-color: $secondaryColor;
     @include Border;
-    border-bottom: 0.1rem solid $tiersColor;
+    border: 0.1rem solid $tiersColor;
     
     
     .logo {
@@ -16,10 +16,10 @@ header {
         
         figure {
             @include FlexColCenterCenter;
-            flex-basis: 60%;
+            flex-basis: 100%;
             
             video {
-                max-width: 50%;
+                max-width: 100%;
                 @include ResponsivImg;
             }
         }

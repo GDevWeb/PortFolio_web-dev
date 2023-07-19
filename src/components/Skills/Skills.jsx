@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import SoftSkills from "./SoftSkills";
-import HardSkills from "./HardSkills";
-import Others from "./HardSkills_BackEnd";
+import Frontend from "./FrontEnd";
+import Others from "./BackEnd";
 import ClickToAction from "../CTA/ClickToAction";
-import HardSkills_BackEnd from "./HardSkills_BackEnd";
+import BackEnd from "./BackEnd";
 import CV from '../../documents/cv_Dammaretz-Gaetan_Dev-Web.pdf';
 import arrowLeftIcon from '../../assets/icons/arrow-left.svg';
 import arrowRightIcon from '../../assets/icons/arrow-right.svg';
@@ -20,19 +20,19 @@ export default function Skills() {
 
   const goToPrevious = () => {
     if (activeComponent === "softSkills") {
-      toggleComponent("hardSkills_BackEnd");
-    } else if (activeComponent === "hardSkills") {
+      toggleComponent("backEnd");
+    } else if (activeComponent === "frontend") {
       toggleComponent("softSkills");
     } else {
-      toggleComponent("hardSkills");
+      toggleComponent("frontend");
     }
   };
 
   const goToNext = () => {
     if (activeComponent === "softSkills") {
-      toggleComponent("hardSkills");
-    } else if (activeComponent === "hardSkills") {
-      toggleComponent("hardSkills_BackEnd");
+      toggleComponent("frontend");
+    } else if (activeComponent === "frontend") {
+      toggleComponent("backEnd");
     } else {
       toggleComponent("softSkills");
     }
@@ -42,8 +42,8 @@ export default function Skills() {
     <>
         <div id="skills">
           {activeComponent === "softSkills" && <SoftSkills />}
-          {activeComponent === "hardSkills" && <HardSkills />}
-          {activeComponent === "hardSkills_BackEnd" && <HardSkills_BackEnd />}
+          {activeComponent === "frontend" && <Frontend />}
+          {activeComponent === "backEnd" && <BackEnd />}
         </div>
 
         <div className="callToAction">
@@ -70,23 +70,23 @@ export default function Skills() {
           </button>
           <div className="straight"></div>
           <button
-            onClick={() => toggleComponent("hardSkills")}
+            onClick={() => toggleComponent("frontend")}
             className={`scrollButton ${
-              activeComponent === "hardSkills" ? "active" : ""
+              activeComponent === "frontend" ? "active" : ""
             }`}
-            aria-label="bouton scroll section hardSkills front-end"
+            aria-label="bouton scroll section frontend front-end"
           >
-            {/* HardSkills Front-end button */}
+            {/* Frontend Front-end button */}
           </button>
           <div className="straight"></div>
           <button
-            onClick={() => toggleComponent("hardSkills_BackEnd")}
+            onClick={() => toggleComponent("backEnd")}
             className={`scrollButton ${
-              activeComponent === "hardSkills_BackEnd" ? "active" : ""
+              activeComponent === "backEnd" ? "active" : ""
             }`}
-            aria-label="bouton scroll section hardSkills back-end"
+            aria-label="bouton scroll section frontend back-end"
           >
-            {/* HardSkills Back-end button */}
+            {/* Frontend Back-end button */}
           </button>
           <button
             onClick={goToNext}

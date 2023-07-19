@@ -4,7 +4,7 @@ import phpIcon from '../../assets/icons/php.svg';
 import nodeJsIcon from '../../assets/icons/node.svg';
 
 
-export default function HardSkills_BackEnd() {
+export default function BackEnd() {
   return (
     <>
 

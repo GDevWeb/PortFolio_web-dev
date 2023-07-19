@@ -6,7 +6,7 @@ import javascriptIcon from '../../assets/icons/javascript.svg';
 
 
 
-export default function HardSkills() {
+export default function FrontEnd() {
   return (
     <>
 

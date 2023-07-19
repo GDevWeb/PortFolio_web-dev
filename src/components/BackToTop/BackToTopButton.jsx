@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import './BackToTop.scss';
+import "./BackToTop.scss";
 import { FaChevronUp } from "react-icons/fa";
 
 export default function BackToTopButton() {
@@ -31,9 +31,11 @@ export default function BackToTopButton() {
   return (
     <>
       {showButton && (
-        <button onClick={scrollUp} className="BackToTopButton">
-          <FaChevronUp />
-        </button>
+        <div className="containerBackToTop">
+          <button onClick={scrollUp} className="BackToTopButton">
+            <FaChevronUp />
+          </button>
+        </div>
       )}
     </>
   );
