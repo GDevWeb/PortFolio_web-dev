@@ -7,7 +7,7 @@ const portFolioTab =
         name : "Passion Guitare",
         description : "Un one page en vanilla",
         image : "",
-        githubLink : "https://github.com/Aescanor/PassionGuitar.git",
+        githubLink : "https://aescanor.github.io/PassionGuitar/",
         codeSandBoxLink : "#",
         type : "Front-end"
     },

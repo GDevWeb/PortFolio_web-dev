@@ -12,17 +12,14 @@ main {
     flex-grow: 1;
 
     section {
-        display: flex;
-        flex-direction: column;
+        @include FlexCol;
         justify-content: space-evenly;
         min-height: 25vh;
         margin-bottom: 10vh;
     }
 
     #aboutMe {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include FlexColCenter;
         min-height: 80vh;
         flex-basis: 50%;
     }
@@ -87,11 +84,8 @@ main {
 }
 
 .hobbies {
-    display: flex;
-    flex-direction: row;
+    @include FlexRowCenterCenter;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     flex-basis: 100%;
     gap: 0.5rem;
 }
@@ -150,7 +144,15 @@ button.active {
     color: white;
 }
 
-// responsive : 
+
+// not Found :
+.notFoundMssg{
+    flex-basis: 60%;
+    text-align: center;
+    color: $tiersColor;
+}
+
+// Responsive : 
 @media screen and (min-width: 768px) {
 
     body {

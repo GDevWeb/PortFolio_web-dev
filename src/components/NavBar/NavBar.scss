@@ -11,15 +11,12 @@ nav {
 }
 
 .liste {
-  list-style-type: none;
-  background-color: $cardColor;
-  min-height: 100%;
-  // height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
+  @include FlexRowCenterCenter;
+  min-height: 100%;
+  background-color: $cardColor;
   border-bottom: 0.2rem solid $tiersColor;
+  list-style-type: none;
 }
 
 a{
@@ -58,8 +55,6 @@ a{
   .liste {
     flex-direction: column;
     height: 60vh;
-    background-color: pink;
-
   }
   
   .items {

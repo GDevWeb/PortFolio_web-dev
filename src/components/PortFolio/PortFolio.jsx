@@ -1,5 +1,5 @@
 import CardPortfolio from '../Cards/Cards_Portfolio';
-import portFolioTab from './portFolio.tab';
+import portFolioTab from './portFolioTab';
 
 export default function PortFolio() {
   return (

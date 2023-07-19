@@ -5,16 +5,11 @@
     text-align: center;
 
     .contact-links {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include FlexRowCenterCenter;
 
         .contact-link {
             flex-basis: 20%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include FlexColCenterCenter;
         }
 
         a {
