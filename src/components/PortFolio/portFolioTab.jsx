@@ -17,7 +17,7 @@ const portFolioTab =
         name : "Memory Kids",
         description : "Un jeux memory en Js",
         image : "",
-        githubLink : "https://github.com/Aescanor/Memory-Kids.git",
+        githubLink : "https://aescanor.github.io/Memory-Kids/",
         codeSandBoxLink : "#",
         type : "Front-end",
     },

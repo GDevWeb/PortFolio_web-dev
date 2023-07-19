@@ -33,7 +33,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      {(toggleMenu || largeur > 425 && largeur > 1990 ) && (
+      {(toggleMenu || largeur > 425 && largeur > 2560 ) && (
         <ul className="liste">
           <li className="items"><Link to="/" onClick={closeMenu} aria-label="retour à l'accueil">Accueil</Link></li>
           <li className="items"><Link to="/" onClick={closeMenu} aria-label="aller à la section à propos de moi">About</Link></li>
