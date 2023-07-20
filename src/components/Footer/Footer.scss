@@ -1,14 +1,16 @@
 @import '../../sass/variables.scss';
 
 footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 10vh;
-    @include SectionStyle;
     @include FlexRowCenter;
+    height: 10vh;
+    margin-top: 15vh;
+    @include SectionStyle;
 
+    .footer-content{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
     .copyright {
         flex-basis: 50%;
     }
