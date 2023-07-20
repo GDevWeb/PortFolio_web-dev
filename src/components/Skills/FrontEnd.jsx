@@ -3,6 +3,7 @@ import htmlIcon from '../../assets/icons/html5.svg';
 import sassIcon from '../../assets/icons/sass.svg';
 import tailWindIcon from '../../assets/icons/tailwind.svg';
 import javascriptIcon from '../../assets/icons/javascript.svg';
+import reactIcon from '../../assets/icons/react.svg';
 
 
 
@@ -39,6 +40,16 @@ export default function FrontEnd() {
       icon={<img src = {javascriptIcon} alt="javascript icon" className="icon"/>}
       skillName={"Javascript"}
     description={"Mon premier langage de programmation 💓"}
+    />
+    <Cards 
+      icon={<img src = {reactIcon} alt="react icon" className="icon"/>}
+      skillName={"React"}
+    description={"Mon premier Framework JS"}
+    />
+    <Cards 
+      icon={<img src = {reactIcon} alt="react icon" className="icon"/>}
+      skillName={"Prochainement"}
+    description={"Dans le prochain épisode ..."}
     />
 
     </div>
