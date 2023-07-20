@@ -4,9 +4,9 @@
 // CTA - link to CV :
 .callToAction {
     display: flex;
-    align-items: center;
     justify-content: right;
-    margin-bottom: 0.5rem ;
+    align-items: center;
+    width: 100%;
 
     button.callToAction {
         padding: 0.5rem;

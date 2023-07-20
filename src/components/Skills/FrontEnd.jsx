@@ -10,7 +10,7 @@ export default function FrontEnd() {
   return (
     <>
 
-    <div className="title_section">
+    <div className="title_section short">
       <p>HardSkills</p>
       <p>Front-end</p>
     </div>

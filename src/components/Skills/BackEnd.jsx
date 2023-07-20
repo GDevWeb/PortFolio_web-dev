@@ -8,7 +8,7 @@ export default function BackEnd() {
   return (
     <>
 
-    <div className="title_section">
+    <div className="title_section short">
       <p>HardSkills</p>
       <p>Back-end</p>
     </div>

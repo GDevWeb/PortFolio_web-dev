@@ -1,0 +1,11 @@
+@import '../../sass/variables.scss';
+
+// not Found :
+.notFoundMssg{
+    font-size: 3rem;
+    font-weight: bold;
+    flex-basis: 60%;
+    text-align: center;
+    color: $tiersColor;
+}
+

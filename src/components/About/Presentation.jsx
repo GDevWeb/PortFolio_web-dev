@@ -2,12 +2,12 @@
 export default function Presentation() {
   return (
     <>
-    <div id='introduction' className='content-presentation'>
+    <div id='introduction' className='presentations'>
             <div className="title_section">
         <p>Présentation </p>
 
       </div>
-<div className="presentation content">
+<div className="presentation">
 <p>Madame, Monsieur,</p>
 
 <p>Je suis en reconversion professionnelle chez M2I formation pour devenir développeur web et web mobile. Avec une expérience antérieure dans le commerce et la sécurité, je suis enthousiaste à l'idée de plonger dans le monde de la programmation.</p>

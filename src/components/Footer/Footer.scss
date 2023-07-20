@@ -7,9 +7,7 @@ footer {
     @include SectionStyle;
 
     .footer-content{
-        display:flex;
-        flex-direction: column;
-        justify-content: space-around;
+        @include FlexCol;
     }
     .copyright {
         flex-basis: 50%;

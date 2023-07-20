@@ -9,12 +9,14 @@
     right: 0.5rem;
 
     .BackToTopButton {
-        width: 3rem;
-        height: 3rem;
+        width: 4rem;
+        height: 4rem;
         padding: 0.5rem;
-        @include BorderRadiusCircle;
+        border: 0.5rem solid $tiersColor;
+        border-radius: 50%;
 
         &:hover {
+            transition: all 0.2s ease-in-out;
             background-color: $tiersColor;
             color: $fontColor;
         }

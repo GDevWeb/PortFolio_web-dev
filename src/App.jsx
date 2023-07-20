@@ -26,7 +26,6 @@ function App() {
             <div className="wrapper">
             <Header />
               <main>
-                <section>
                   <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/contact" element={<Contact />} />
@@ -55,7 +54,6 @@ function App() {
                     <Route path="/portfolio" element={<Portfolio />}></Route>
                     <Route path="*" element={<NotFound />} />
                   </Routes>
-                </section>
               </main>
                   <ButtonBackToTop />
                   <Footer />

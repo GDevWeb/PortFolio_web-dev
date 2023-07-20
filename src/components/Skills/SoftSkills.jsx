@@ -8,7 +8,7 @@ import boltIcon from "../../assets/icons/bolt.svg";
 export default function SoftSkills() {
   return (
     <>
-      <div className="title_section">
+      <div className="title_section short">
         <p>SoftSkills</p>
       </div>
       <div id="skills" className="softSkills">

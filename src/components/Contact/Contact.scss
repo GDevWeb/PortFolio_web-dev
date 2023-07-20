@@ -3,6 +3,8 @@
 #contact {
     @include SectionStyle;
     text-align: center;
+    flex-basis: 90%;
+    width: 90%;
 
     .contact-links {
         @include FlexRowCenterCenter;

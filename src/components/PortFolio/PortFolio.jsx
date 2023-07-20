@@ -8,7 +8,7 @@ export default function PortFolio() {
 
     <section>
 
-    <div className="title_section">
+    <div className="title_section short">
         <p>PortFolio </p>
       </div>
     <div id='portFolio' className='portfolio'>

@@ -21,6 +21,11 @@ main {
         @include FlexColCenter;
         min-height: 80vh;
         flex-basis: 100%;
+
+        .presentations{
+            @include SectionStyle;
+            padding: 5rem;
+        }
     }
 
     #skills {
@@ -40,10 +45,13 @@ main {
 
         p {
             margin-top: 0.25rem;
+            line-height: 5rem;
         }
 
         p.signature {
             text-align: right;
+            font-style: italic;
+            font-weight: bold;
         }
     }
 
@@ -92,7 +100,8 @@ main {
 
 
 .title_section {
-    flex-basis: 20%;
+    flex-basis: 100%;
+    width: 100%;
     margin-bottom: 1rem;
 
     p {
@@ -142,31 +151,4 @@ main {
 button.active {
     background-color: $tiersColor;
     color: white;
-}
-
-
-// not Found :
-.notFoundMssg{
-    flex-basis: 60%;
-    text-align: center;
-    color: $tiersColor;
-}
-
-// Responsive : 
-@media screen and (min-width: 768px) {
-
-    body {
-        font-size: 2rem;
-    }
-
-    main{
-        width: 70%;
-    }
-}
-
-@media screen and (min-width: 1440px){
-    main{
-        width: 90%;
-    }
-
 }
