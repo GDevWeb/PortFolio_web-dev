@@ -2,6 +2,7 @@ import Cards from '../Cards/Cards';
 import dataBaseIcon from '../../assets/icons/database.svg';
 import phpIcon from '../../assets/icons/php.svg';
 import nodeJsIcon from '../../assets/icons/node.svg';
+import laravelIcon from '../../assets/icons/laravel.svg';
 
 
 export default function BackEnd() {
@@ -18,13 +19,13 @@ export default function BackEnd() {
     <Cards 
       icon={<img src = {dataBaseIcon} alt="database icon" className="icon"/>}
     skillName={"MYSQL"}
-    description={"Que dire à son sujet ... Lui et moi on apprend à se connaître !"}
+    description={"MySQL c'est la BASE des Bases du Back 😁"}
     />
 
     <Cards 
       icon={<img src = {phpIcon} alt="php icon" className="icon"/>}
       skillName={"PHP"}
-    description={"PHP, je connaîs les rudiments mais je ne suis pas bons usager pour le moment ... !"}
+    description={"En cours d'apprentissage 🧑‍🎓"}
     />
 
     <Cards 
@@ -33,6 +34,11 @@ export default function BackEnd() {
     description={"Un langage côté serveur qui me parle ! 😊"}
     />
 
+    <Cards 
+      icon={<img src = {laravelIcon} alt="laravel icon" className="icon"/>}
+      skillName={"Laravel"}
+    description={"À venir"}
+    />
 
     </div>
     </>
