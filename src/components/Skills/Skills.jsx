@@ -24,9 +24,9 @@ export default function Skills() {
     } else if (activeComponent === "others") {
       toggleComponent("backend");
     } else if(activeComponent === "backend"){
-      toggleComponent("frontEnd")
+      toggleComponent("frontend")
     }else {
-      toggleComponent("others");
+      toggleComponent("softSkills");
     }
   };
 
@@ -34,12 +34,13 @@ export default function Skills() {
     if (activeComponent === "softSkills") {
       toggleComponent("frontend");
     } else if (activeComponent === "frontend") {
-      toggleComponent("backEnd");
+      toggleComponent("backend");
     }else if (activeComponent === "backend"){
       toggleComponent("others")
     }else if(activeComponent === "others"){
     toggleComponent("softSkills");
-    }else{
+    }
+    else{
       toggleComponent("others");
     }
   };
@@ -51,7 +52,7 @@ export default function Skills() {
         <div id="skills">
           {activeComponent === "softSkills" && <SoftSkills />}
           {activeComponent === "frontend" && <Frontend />}
-          {activeComponent === "backEnd" && <BackEnd />}
+          {activeComponent === "backend" && <BackEnd />}
           {activeComponent === "others" && <Others />}
         </div>
 
@@ -97,9 +98,9 @@ export default function Skills() {
 
           {/* Frontend Back-end button */}
           <button
-            onClick={() => toggleComponent("backEnd")}
+            onClick={() => toggleComponent("backend")}
             className={`scrollButton ${
-              activeComponent === "backEnd" ? "active" : ""
+              activeComponent === "backend" ? "active" : ""
             }`}
             aria-label="bouton scroll section frontend back-end"
           >
