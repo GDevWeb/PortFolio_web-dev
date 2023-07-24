@@ -1,7 +1,7 @@
 import React from 'react';
 import Cards from '../Cards/Cards';
-import figmaIcon from '../..assets/icons/figma.svg';
-import githubIcon from '../..assets/icons/github.svg';
+import figmaIcon from '../../assets/icons/figma.svg';
+import githubIcon from '../../assets/icons/github.svg';
 
 
 export default function Others() {
