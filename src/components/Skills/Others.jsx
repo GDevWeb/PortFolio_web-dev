@@ -9,7 +9,6 @@ export default function Others() {
     <>
     
     <div className="title_section short">
-        <p>Skills</p>
         <p>Autres :</p>
     </div>
 
