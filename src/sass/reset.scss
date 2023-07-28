@@ -24,11 +24,12 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-width: 80vw;
+    width: 80vw;
     max-width: $maxWidth;
     min-height: 100vh;
     margin: auto;
     padding: 0 1rem;
+    background-color: $secondaryColor;
 
 }
 
