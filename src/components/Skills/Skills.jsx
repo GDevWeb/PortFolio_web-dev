@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SoftSkills from "./SoftSkills";
 import Frontend from "./FrontEnd";
-import Others from "./BackEnd";
+import Others from "./Others";
 import ClickToAction from "../CTA/ClickToAction";
 import BackEnd from "./BackEnd";
 import CV from '../../documents/cv_Dammaretz-Gaetan_Dev-Web.pdf';
@@ -20,11 +20,13 @@ export default function Skills() {
 
   const goToPrevious = () => {
     if (activeComponent === "softSkills") {
-      toggleComponent("backEnd");
-    } else if (activeComponent === "frontend") {
+      toggleComponent("others");
+    } else if (activeComponent === "others") {
+      toggleComponent("backend");
+    } else if(activeComponent === "backend"){
+      toggleComponent("frontend")
+    }else {
       toggleComponent("softSkills");
-    } else {
-      toggleComponent("frontend");
     }
   };
 
@@ -32,18 +34,26 @@ export default function Skills() {
     if (activeComponent === "softSkills") {
       toggleComponent("frontend");
     } else if (activeComponent === "frontend") {
-      toggleComponent("backEnd");
-    } else {
-      toggleComponent("softSkills");
+      toggleComponent("backend");
+    }else if (activeComponent === "backend"){
+      toggleComponent("others")
+    }else if(activeComponent === "others"){
+    toggleComponent("softSkills");
+    }
+    else{
+      toggleComponent("others");
     }
   };
+    
+    
 
   return (
     <>
         <div id="skills">
           {activeComponent === "softSkills" && <SoftSkills />}
           {activeComponent === "frontend" && <Frontend />}
-          {activeComponent === "backEnd" && <BackEnd />}
+          {activeComponent === "backend" && <BackEnd />}
+          {activeComponent === "others" && <Others />}
         </div>
 
         <div className="callToAction">
@@ -52,13 +62,17 @@ export default function Skills() {
           </a>
         </div>
 
+{/* Previous arrow :  */}
         <div className="container_scroll-button">
           <button
             onClick={goToPrevious}
             aria-label="Bouton gauche"
           >
+
           <img src={arrowLeftIcon} alt="fléche vers la gauche" className="arrow" />
           </button>
+
+          {/* SoftSkills button */}
           <button
             onClick={() => toggleComponent("softSkills")}
             className={`scrollButton ${
@@ -66,9 +80,11 @@ export default function Skills() {
             }`}
             aria-label="bouton scroll section softSkills"
           >
-            {/* SoftSkills button */}
           </button>
+
           <div className="straight"></div>
+
+          {/* Frontend Front-end button */}
           <button
             onClick={() => toggleComponent("frontend")}
             className={`scrollButton ${
@@ -76,22 +92,39 @@ export default function Skills() {
             }`}
             aria-label="bouton scroll section frontend front-end"
           >
-            {/* Frontend Front-end button */}
           </button>
+
           <div className="straight"></div>
+
+          {/* Frontend Back-end button */}
           <button
-            onClick={() => toggleComponent("backEnd")}
+            onClick={() => toggleComponent("backend")}
             className={`scrollButton ${
-              activeComponent === "backEnd" ? "active" : ""
+              activeComponent === "backend" ? "active" : ""
             }`}
             aria-label="bouton scroll section frontend back-end"
           >
-            {/* Frontend Back-end button */}
+
           </button>
+
+          <div className="straight"></div>
+
+          {/* Skills Others button */}
+          <button
+            onClick={() => toggleComponent("others")}
+            className={`scrollButton ${
+              activeComponent === "others" ? "active" : ""
+            }`}
+            aria-label="bouton scroll section others skills"
+          >
+
+          </button>
+
           <button
             onClick={goToNext}
             aria-label="flèche suivant"
           >
+
           <img src={arrowRightIcon} alt="flèche vers la droite" className="arrow" />
           </button>
         </div>
