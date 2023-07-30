@@ -155,3 +155,12 @@ button.active {
     background-color: $tiersColor;
     color: white;
 }
+
+@media screen and (max-width : 425px){
+
+    #introduction {
+    height: 50vh;
+    overflow: scroll;
+}
+
+}
